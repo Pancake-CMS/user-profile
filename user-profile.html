@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-material/paper-material.html">
+
+<dom-module>
+    <template>
+        <style>
+            paper-material {
+                display: grid;
+            }
+            paper-material > img {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            paper-material > div {
+                grid-column-start: 2;
+                grid-column-end: 8;
+            }
+        </style>
+        <paper-material elevation="1">
+            <img src$="[[userInfo.profileAvatar]]">
+            <div>
+                <p>[[userInfo.name]]</p>
+                <p>[[userInfo.email]]</p>
+            </div>
+        </paper-material>
+    </template>
+    <script>
+        Polymer({
+            is: 'user-profile',
+
+            properties: {
+                userInfo: {
+                    type: Object,
+                    notify: true,
+                    reflectToAttribute: false
+                }
+            }
+        })
+    </script>
+</dom-module>

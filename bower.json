@@ -1,0 +1,20 @@
+{
+  "name": "user-profile",
+  "homepage": "https://github.com/Pancake-CMS/user-profile",
+  "authors": [
+    "Prateek Jadhwani <prateekjadhwani@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "user-profile.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-material": "PolymerElements/paper-material#^1.0.6"
+  }
+}
